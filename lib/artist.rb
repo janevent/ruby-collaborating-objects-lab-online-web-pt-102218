@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 require 'pry'
 class Artist
   
   attr_accessor :name, :songs
+=======
+class Artist
+  
+  attr_accessor :name 
+>>>>>>> 37b5233a2e05bed148aeab59f5c0ff8bc781ca7e
   
   def initialize(name)
     @name = name
@@ -10,13 +16,18 @@ class Artist
   
   @@all = []
   
+<<<<<<< HEAD
   def add_song(song)
     #song = Song.new(@name)
+=======
+  def add_songs(song)
+>>>>>>> 37b5233a2e05bed148aeab59f5c0ff8bc781ca7e
     @songs << song
   end
   
   def songs 
     @songs 
+<<<<<<< HEAD
     
   end
   
@@ -24,11 +35,18 @@ class Artist
   def save 
     @@all << self
     self
+=======
+  end
+  
+  def save 
+    @@all << self
+>>>>>>> 37b5233a2e05bed148aeab59f5c0ff8bc781ca7e
   end
   
   def self.all 
     @@all 
   end
+<<<<<<< HEAD
   
   def self.find_by_name(name)
     all.detect{|artist| artist.name == name}
@@ -55,4 +73,6 @@ class Artist
       puts song.name 
     end 
   end
+=======
+>>>>>>> 37b5233a2e05bed148aeab59f5c0ff8bc781ca7e
 end

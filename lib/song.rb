@@ -1,4 +1,5 @@
 class Song 
+<<<<<<< HEAD
   
   attr_accessor :name, :artist
   
@@ -16,4 +17,6 @@ class Song
     song.artist_name = file_name.split(" - ")[0]
     song
   end
+=======
+>>>>>>> 37b5233a2e05bed148aeab59f5c0ff8bc781ca7e
 end
